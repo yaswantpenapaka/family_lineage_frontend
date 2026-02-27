@@ -1,9 +1,3 @@
-
----
-
-# 🎨 FRONTEND REPO — `README.md`
-
-```markdown
 # 🧬 Family Lineage Management System – Frontend
 
 🔗 **Backend Repository:**  
