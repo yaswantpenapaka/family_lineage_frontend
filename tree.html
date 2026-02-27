@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Family Tree</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+  margin: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100vh;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-width: 2px;
+}
+
+.couple-box {
+  stroke: #2c3e50;
+  stroke-width: 1.5;
+  rx: 12;
+  ry: 12;
+}
+
+.male { fill: #4A90E2; }
+.female { fill: #F78FB3; }
+
+.name-text {
+  fill: white;
+  font-size: 13px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+}
+</style>
+</head>
+
+<body>
+<button onclick="goDashboard()">Dashboard</button>
+<svg></svg>
+</body>
+<script src="js/tree.js"></script>
+</html>

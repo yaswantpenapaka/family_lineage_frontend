@@ -1,0 +1,58 @@
+<h2>Profile</h2>
+
+<img id="profile_pic" width="150"><br><br>
+
+<p><b>Name:</b> <span id="name"></span></p>
+<p><b>DOB:</b> <span id="dob"></span></p>
+<p><b>Gender:</b> <span id="gender"></span></p>
+<p><b>Married:</b> <span id="married_status"></span></p>
+<p><b>Instagram:</b> <span id="instagram"></span></p>
+<p><b>Anniversary:</b> <span id="anniversary"></span></p>
+
+<button onclick="enableEdit()">Edit</button>
+
+<div id="editForm" style="display:none">
+
+Firstname:
+<input id="edit_firstname"><br>
+
+Surname:
+<input id="edit_surname"><br>
+
+DOB:
+<input type="date" id="edit_dob"><br>
+
+Gender:
+<select id="edit_gender">
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</select><br>
+
+Married:
+<select id="edit_married" onchange="toggleMarriage()">
+<option value="0">No</option>
+<option value="1">Yes</option>
+</select><br>
+
+Upload Photo:
+<input type="file" id="photo"><br>
+
+Instagram:
+<input id="edit_instagram"><br>
+
+Anniversary:
+<input type="date" id="edit_anniversary"><br>
+
+<button onclick="saveProfile()">Save</button>
+</div>
+
+<hr>
+
+<div id="relationButtons" style="display:none">
+<button onclick="addFather()">Add Father</button>
+<button onclick="addSibling()">Add Sibling</button>
+<button onclick="addMarriedPartner()">Add Married Partner</button>
+<button onclick="addChild()">Add Child</button>
+</div>
+
+<script src="js/profile.js"></script>

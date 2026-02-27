@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Dashboard</h2>
+
+<button onclick="openProfile()">My Profile</button>
+
+<button onclick="openTree()">Family Tree</button>
+
+<button onclick="logout()">Logout</button>
+
+<h3>Upcoming Events</h3>
+
+<div id="events"></div>
+
+<h4>NOTE</h4>
+<ul>
+<li>Admin can edit any profile.</li>
+<li>Members can edit self, parents, spouse and children only.</li>
+<li>Gender allowed: Male/Female only.</li>
+<li>Children can be added only if married.</li>
+<li>Siblings automatically share same parents.</li>
+</ul>
+
+<script src="js/config.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
